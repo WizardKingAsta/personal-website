@@ -20,7 +20,7 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<img src="images/GPTNAUNT copy.png" alt = "Custom Icon" class = "custom-icon">
+							<img src="images/GPTNAUNT copy.png" alt = "Custom Icon">
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -30,13 +30,16 @@
 						</div>
 						<nav>
 							<ul>
-								<!-- <li><a href="#intro">Intro</a></li> -->
+								<!--<li><a href="javascript:void(0);" onclick="scrollToSection('work')">Work</a></li>
+								<li><a href="javascript:void(0);" onclick="scrollToSection('projects')">Projects</a></li>
+								<li><a href="javascript:void(0);" onclick="scrollToSection('about')">About</a></li>
+								<li><a href="javascript:void(0);" onclick="scrollToSection('links')">Links</a></li>
+								<li><a href="javascript:void(0);" onclick="scrollToSection('contact')">Contact</a></li> -->
 								<li><a href="#work">Work</a></li>
 								<li><a href="#projects">Projects</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#links">Links</a></li>
 								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -390,6 +393,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			function scrollToSection(sectionId) {
+				const section = document.getElementById(sectionId);
+				if (section) {
+					section.scrollIntoView({ behavior: 'smooth' });
+				}
+			}
 	</body>
 </html>

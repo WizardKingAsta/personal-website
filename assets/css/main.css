@@ -1292,16 +1292,24 @@ input, select, textarea {
 
 		#header .logo {
 			width: 6.5rem;
-			height: 6.5 rem;
+			height: 6.5rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
-			border-radius: 100%;
+			border-radius: 50%;
 			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-
+			overflow: hidden;
 		}
+
+			#header .logo img {
+				max-width: 95%;
+				max-height: 95%;
+				border-radius: 100%; /* Ensure the image is also circular */
+				object-fit: cover; /* Ensure the image covers the area without distortion */
+				display: block;
+			}
 
 			#header .logo .icon:before {
 				font-size: 2rem;
@@ -1507,7 +1515,9 @@ input, select, textarea {
 		}
 
 /* Main */
-
+	html {
+		scroll-behavior: smooth;
+	}
 	#main {
 		-moz-flex-grow: 1;
 		-webkit-flex-grow: 1;
