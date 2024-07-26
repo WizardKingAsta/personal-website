@@ -1292,7 +1292,7 @@ input, select, textarea {
 
 		#header .logo {
 			width: 6.5rem;
-			height: 6.5rem;
+			height: 6.5 rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
@@ -1537,6 +1537,11 @@ input, select, textarea {
 		max-width: 100%;
 		z-index: 3;
 	}
+
+		#resume{
+			width: 90%;
+			height: 700px;
+		}
 
 		#main article {
 			-moz-transform: translateY(0.25rem);
