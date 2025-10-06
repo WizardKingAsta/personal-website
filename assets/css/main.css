@@ -108,6 +108,15 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+		#space-canvas {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1; /* behind everything */
+			width: 100vw;
+			height: 100vh;
+			display: block;
+		  }
 
 /* Type */
 

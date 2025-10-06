@@ -13,7 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload"> 
-
+		<canvas id="space-canvas"></canvas>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -39,7 +39,8 @@
 								<li><a href="#projects">Projects</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#links">Links</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#writing-and-philosphy">Writing and Philosphy</a></li>
+								<!--<li><a href="#contact">Contact</a></li>-->
 							</ul>
 						</nav>
 					</header>
@@ -59,17 +60,22 @@
 
 						<!-- Work -->
 							<article id="work">
+								<!--PNC TDP-->
+								<h2 class="major">PNC: Software Engineer</h2>
+								<span class="image main"><img src="images/pncbanner.jpeg" alt="" /></span>
+								<p>As part of PNC Bank’s Software Engineer Rotational Program, I contributed to the development and deployment of large-scale internal platforms used across multiple business units. My work centered on building and enhancing enterprise dashboards with <strong>Angular, Java, and Spring Boot</strong>, supporting over <strong>1,000 internal users</strong> and enabling better visibility into key enterprise systems.</p>
+
+								<p>I played a key role in <strong>extending C# APIs</strong> to integrate <strong>Teradata-sourced data via MongoDB</strong>, designing new endpoints, data types, and mappers to streamline data flow across services. Additionally, I delivered significant upgrades to internal APIs and dashboards that were adopted by PNC’s enterprise architecture community (~300 developers), improving system observability and reducing troubleshooting time.</p>
+
+								<p>Throughout the program, I guided features through <strong>PNC’s full release pipeline</strong> (RND → UAT → QA → Production), ensuring secure, stable, and reliable deployments at scale. This experience strengthened my ability to work within complex enterprise environments, ship production features across diverse technology stacks, and collaborate with cross-functional teams to deliver high-impact solutions.</p>
+
 								<!--PNC Internship-->
 								<h2 class="major">PNC: Technology Intern</h2>
 								<span class="image main"><img src="images/pncbanner.jpeg" alt="" /></span>
 								<p>During my internship, I utilized cutting-edge machine learning techniques to automate and enhance the quality control process for SOX (Sarbanes-Oxley) reports. My work primarily focused on creating and refining algorithms to detect anomalies and streamline data processing using scikit-learn and JupyterHub. By implementing a range of supervised and unsupervised models, I significantly improved anomaly detection capabilities.</p>
 								<p>I conducted thorough data preprocessing, including feature selection and dimensionality reduction, which greatly enhanced model input quality and boosted model efficiency by 20%. Furthermore, I integrated advanced statistical methods and employed ensemble techniques to develop more robust and scalable models. This process involved rigorous cross-validation and the application of relevant performance metrics.</p>
 								<p>In addition to algorithm development, I increased overall data processing efficiency by 30%, contributing to a 60% reduction in manual quality control time. Through iterative tuning and validation, I improved anomaly detection accuracy by 15%, achieving a final model accuracy of 92%. These advancements not only automated a previously manual process but also significantly improved the accuracy and efficiency of quality control for SOX reports, highlighting the potential of machine learning in enhancing regulatory compliance workflows.								</p>
-								<h2 class="major">Headstarter AI: SWE Fellow</h2>
-								<span class="image main"><img src="images/headstarterpic.png" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>
+								</article>
 
 						<!-- About -->
 							<article id="about">
@@ -82,12 +88,26 @@
 
 						<!-- Projects and Accomplishments -->
 							<article id="projects">
+								<h2 class="major">Apartment Copilot</h2>
+								<span class="image main"><img src="images/apartment_copilot.png" alt="" /></span>
+								<p><em>Personal Project | Full-Stack Web Application (FastAPI + React + SQLite)</em></p>
+
+								<p>Apartment Copilot is a full-stack web application designed to streamline the apartment-hunting process by automatically <strong>scraping, ranking, and explaining</strong> rental listings. Users can input links to multiple apartment sites, and the system consolidates data into a unified, AI-powered dashboard that ranks the top options based on customizable criteria.</p>
+
+								<p>On the backend, I built a <strong>FastAPI</strong> service that asynchronously fetches and parses listings, applying <strong>deduplication, error handling, and polling mechanisms</strong> to maintain real-time data accuracy with minimal latency. The results are persisted in a lightweight <strong>SQLite database</strong>, making it easy to deploy while ensuring reliable state management during scraping and ranking.</p>
+
+								<p>On the frontend, a <strong>React</strong> interface displays ranked listings and explanations in real time, providing users with a clean and intuitive way to compare apartments side-by-side. The system currently scales to <strong>200+ listings during testing</strong>, with a modular design that will support more complex ranking logic and AI-driven explanations going forward.</p>
+
+								<p>In upcoming iterations, I plan to integrate <strong>retrieval-augmented generation (RAG)</strong> using a vector database to ground ranking explanations in listing data, and explore prompt engineering to generate more natural, context-aware summaries. Beyond the technical improvements, I aim to <strong>deploy Apartment Copilot</strong> and engage with <strong>local apartment agencies</strong> to pilot the tool on their websites. This would provide real-world user feedback, allowing me to iterate quickly and refine both the system’s capabilities and its user experience—moving the project closer to a production-ready, impactful solution.</p>
+
 								<h2 class="major">Rutgers Hackathon</h2>
 								<span class="image main"><img src="images/haclRuBanner.jpeg" alt="" /></span>
 								<p>Worked on a 3 person team to make a web app that displays crowds in our university gyms using live user input as data for the crowd meter. We created an interface to take in user input for what their perceieved crowd level at the gym is, we also deleted data that was older than 15 minutes old to keep meter fresh and accurate. We used python for the back and front end, utilized Streamlit API for the webpage and user input, and we launched online with AWS. I learned how to use python and AWS for this, and was able to experience working on a team for a real world project. Our efforts won us the health track for the 2023 Rutgers Hackathon.</p>
+								
 								<h2 class="major">Huffman Coding</h2>
 								<span class="image main"><img src="images/huffmanpic.jpg" alt="" /></span>
 								<p>Implemented a Huffman coding algorithm to compress text files, achieving up to 50% reduction in file size. Used a priority queue (min-heap) to build a binary tree, reducing time complexity for tree construction to O(nlogn). Assigned binary codes to 256 unique characters based on their frequencies, optimizing for space efficiency. Encoded text into binary format, reducing the average character representation length from 8 bits to as low as 3 bits for the most frequent characters.</p> 
+							
 							</article>
 						
 						<!--Links-->
@@ -97,12 +117,35 @@
 								<!--<iframe id = "resume" src = "websiteResume.pdf" frameborder = "0"></iframe>-->
 								<p>You can view my resume <a href="websiteResume.pdf" target="_blank">here</a>.</p>
 								<h2 class = "major">Git Hub</h2>
-								<p class="minor">Link to my Git: <a href="https://github.com/WizardKingAsta/Projects.git" target = "_blank">Git Hub</a>.</p>
+								<p class="minor">Link to my Git: <a href="https://github.com/WizardKingAsta" target = "_blank">Git Hub</a>.</p>
 								<h2 class = "major">Linked in</h2>
 								<p class="minor">Heres my Linked in: <a href="https://www.linkedin.com/in/maanav-choudhary/" target = "_blank">Maanav Choudhary</a>.</p>
 							</article>
 
-						<!-- Contact -->
+						<!--Writing and Philosphy-->
+						<article id = "writing-and-philosphy">
+							<h2 class = "major">My Writing</h2>
+							<p>Outside of software, I love to write! My main pieces are my first novel that I am currently in the process of writing (200 pages strong!) and a variety of essays exploring philosophy, technology, and personal reflections. This section contains some of my favorite works!</p>
+
+							<div class="essay-list">
+							<div class="essay-card">
+								<h3><a href="Theory Theory as an ideal Representation of Human Concioussness.pdf" target="_blank">Theory Theory as a Superior Theory of Mind</a></h3>
+								<p>A comparison between two prominent theories of mind: Simulation Theory, arguing we understand others' minds by imagining ourselves in their shoes, and Theory Theory, arguing we use knowledge and principles to understand others' minds, improving iterativly. </p>
+								
+							</div>
+
+							<div class="essay-card">
+								<h3><a href="Demystifying Marx's Commodity and Analyzing the Rise of Manufacture.pdf" target="_blank">Demystifying Marx's Commodity and Analyzing the Rise of Manufacture</a></h3>
+								<p>A dual objective paper, aiming to analyze Marx's concepts of the Commodity and the Fetishes we build around them, as well as how the modern age has effected our relationships and family dynamics.</p>
+								
+								<div class="essay-card">
+									<h3><a href="An Analysis of Freudian Sexuality Theories.pdf" target="_blank">An Analysis of Freudian Sexuality Theories</a></h3>
+									<p>This paper looks at Freud's theories of the effect sexual experiences during development may have on the development of children and adult fixations. </p>
+							</div>
+							</div>
+						</article>
+
+						<!-- Contact 
 							<article id="contact">
 								<h2 class="major">Contact</h2>
 								<form method="post" action="#">
@@ -131,7 +174,7 @@
 									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
-							</article>
+							</article> -->
 
 						<!-- Elements -->
 							<article id="elements">
@@ -393,6 +436,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+			<script src="space.js"></script>
 			function scrollToSection(sectionId) {
 				const section = document.getElementById(sectionId);
 				if (section) {
